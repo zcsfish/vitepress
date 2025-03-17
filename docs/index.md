@@ -4,22 +4,16 @@ layout: home
 
 hero:
   name: "鳝鱼の网站"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  tagline: 免费基于VitePress构建的博客网站
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 网站所有文章列表
+      link: /list.html
     - theme: alt
-      text: API Examples
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      text: 关于我们
+      link: /about
+    - theme: alt
+      text: 赞助我们
+      link: /donate.html
 ---
 
