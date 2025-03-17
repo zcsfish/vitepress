@@ -4,14 +4,13 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "鳝鱼の网站",
   description: "A VitePress Site",
-  srcDir: "./docs"
+  srcDir: "./docs",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '🏠返回主页', link: '/' },
       { text: '📄文章列表', link: '/list.html' }
     ],
-
     sidebar: [
       {
         text: '博客',
