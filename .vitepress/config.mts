@@ -1,23 +1,19 @@
 import { defineConfig } from 'vitepress'
-import { h } from 'vue'
-import Theme from 'vitepress/theme'
-import GiscusComment from './theme/components/GiscusComment.vue'
+import timeline from "vitepress-markdown-timeline"; 
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "鳝鱼の网站",
   description: "A VitePress Site",
   srcDir: "./docs",
-  
-  // 主题扩展配置
-  extends: class extends Theme {
-    Layout() {
-      return h(Theme.Layout, null, {
-        'doc-after': () => h(GiscusComment)
-      })
-    }
-  },
-
+  markdown: { 
+    //行号显示
+    lineNumbers: true, 
+    //时间线 //
+    config: (md) => {
+      md.use(timeline);
+    },
+  }, 
   themeConfig: {
     nav: [
       { text: '🏠返回主页', link: '/' },
