@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { h } from 'vue'
 import Theme from 'vitepress/theme'
-import GiscusComment from './components/GiscusComment.vue'
+import GiscusComment from './theme/components/GiscusComment.vue'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -9,7 +9,7 @@ export default defineConfig({
   description: "A VitePress Site",
   srcDir: "./docs",
   
-  // 主题配置与自定义布局
+  // 主题扩展配置
   extends: class extends Theme {
     Layout() {
       return h(Theme.Layout, null, {
@@ -18,7 +18,6 @@ export default defineConfig({
     }
   },
 
-  // 主题配置
   themeConfig: {
     nav: [
       { text: '🏠返回主页', link: '/' },
