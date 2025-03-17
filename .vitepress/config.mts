@@ -17,7 +17,13 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '🏠返回主页', link: '/' },
-      { text: '📄文章列表', link: '/list.html' }
+      { text: '📄文章列表', link: '/list.html' },
+      {
+        text: 'WiKi',
+        items: [
+          {text: '三角洲行动', link: '/wiki/df/'}
+        ]
+      }
     ],
     sidebar: [
       {
