@@ -3,6 +3,7 @@ import timeline from "vitepress-markdown-timeline";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  ignoredeadlinks: true
   title: "鳝鱼の网站",
   description: "A VitePress Site",
   srcDir: "./docs",
