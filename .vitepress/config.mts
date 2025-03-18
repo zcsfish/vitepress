@@ -7,6 +7,10 @@ export default defineConfig({
   title: "鳝鱼の网站",
   description: "A VitePress Site",
   srcDir: "./docs",
+  footer: {
+    copyright: "©️ 2025 鳝鱼のWiKi All right reseverd.",
+    message: "[三角洲行动]为[腾讯公司]注册商标，本站内容与版权方无关联。"
+  },
   markdown: { 
     //行号显示
     lineNumbers: true, 
