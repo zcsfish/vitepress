@@ -1,8 +1,31 @@
 import { defineConfig } from 'vitepress'
 import timeline from "vitepress-markdown-timeline"; 
+import { AnnouncementPlugin } from 'vitepress-plugin-announcement'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    plugins: [
+      AnnouncementPlugin({
+        title: '公告栏',
+        body: [
+          { type: 'text', content: '开始阅读网站内容前，请先认真阅读《网站使用条款》、《网站隐私政策》。如果您访问了网站的任何内容，则视为您同意了本网站的所有条约。' }
+        ],
+        footer: [
+          {
+            type: 'button',
+            content: '使用条款',
+            link: '/eula.html#网站使用条款'
+          },
+          {
+            type: 'button',
+            content: '隐私政策',
+            link: '/eula.html#网站隐私政策'
+          }
+        ],
+      })
+    ]
+  },
   extends: '@vue/theme',
   ignoreDeadLinks: true,
   title: "鳝鱼の网站",
@@ -17,10 +40,6 @@ export default defineConfig({
     },
   }, 
   themeConfig: {
-    footer: {
-    copyright: "©️ 2025 鳝鱼のWiKi All right reseverd.",
-    message: "[三角洲行动]为[腾讯公司]注册商标，本站内容与版权方无关联。"
-    },
     nav: [
       { text: '🏠返回主页', link: '/' },
       { text: '📄文章列表', link: '/list.html' },

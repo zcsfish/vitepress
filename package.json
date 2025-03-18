@@ -9,6 +9,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
+    "vitepress-plugin-announcement": "^0.1.4",
     "vitepress-plugin-comment-with-giscus": "^1.1.15"
   }
 }
