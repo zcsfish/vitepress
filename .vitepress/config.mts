@@ -16,11 +16,6 @@ export default defineConfig({
             type: 'button',
             content: '使用条款',
             link: '/eula.html#网站使用条款'
-          },
-          {
-            type: 'button',
-            content: '隐私政策',
-            link: '/eula.html#网站隐私政策'
           }
         ],
       })
