@@ -16,6 +16,6 @@ hero:
       text: 关于我们
       link: /about
     - theme: alt
-      text: GitHub
+      text: GitHub 链接
       link: https://github.com/zcsfish/vitepress
 ---
