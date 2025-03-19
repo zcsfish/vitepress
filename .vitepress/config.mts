@@ -9,13 +9,18 @@ export default defineConfig({
       AnnouncementPlugin({
         title: '公告栏',
         body: [
-          { type: 'text', content: '开始阅读网站内容前，请先认真阅读《网站使用条款》、《网站隐私政策》。如果您访问了网站的任何内容，则视为您同意了本网站的所有条约。' }
+          { type: 'text', content: '开始阅读网站内容前，请先认真阅读《网站使用条款》。如果您访问了网站的任何内容，则视为您同意了本网站的条约。' }
         ],
         footer: [
           {
             type: 'button',
             content: '使用条款',
             link: '/eula.html#网站使用条款'
+          },
+          {
+            type: 'button',
+            content: '引用清单',
+            link: '/ATTRIBUTION.html'
           }
         ],
       })
